@@ -53,7 +53,7 @@ As a rule of fist using qsort, double data will double sorting time.
    this number when you have more of them.
 
 2. While the checksum approach is less effective than hashing (which would 
-   seriously slowdown the disk reading the number of collisions is low, 
+   seriously slowdown the disk reading) the number of collisions is low, 
    about 1%. Meaning that in the above example the number is 0,007% of
    all positions.
 </pre>
