@@ -34,5 +34,21 @@ for large NNUE data.
        16     2B       1B    |  256     32B     16B
        32     4B       2B    |  512     64B     32B
        64     8B       4B    |
+</pre>
 
+# Speed
+<pre>
+Aside from all the disk operations the main bottleneck is the sorting of 
+billions of sfens. On my Ryzen 9 5900X using 24Gb the sorting of 3 billion
+sfens took 9:45, counted 23 million doubles, 0.7%
+
+As a rule of fist using qsort, double data will double sorting time.
+</pre>
+
+# Else
+<pre>
+#define MAX_DOUBLES 100000000               // 100M
+
+For storing doubles space is reserved for 100 millon sfens, increase this 
+number when you have more of them.
 </pre>
