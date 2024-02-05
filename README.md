@@ -30,9 +30,9 @@ for large NNUE data.
    This makes the util extremely memory hungry, limitations per Gb :
 
        Gb    Count   Delete  |   Gb    Count   Delete
-        8     1B      500M   |  128     16B     8B
-       16     2B       1B    |  256     32B    16B
-       32     4B       2B    |  512     64B    32B
+        8     1B      500M   |  128     16B      8B
+       16     2B       1B    |  256     32B     16B
+       32     4B       2B    |  512     64B     32B
        64     8B       4B    |
 
 </pre>
