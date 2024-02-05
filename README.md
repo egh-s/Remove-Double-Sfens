@@ -19,5 +19,20 @@ for large NNUE data.
 
 # Operation
 <pre>
-  
+1. At program start you are prompted to type the wished memory use in Gb
+   and the util will allocate that amount. 
+
+2. #define SIZE 16      // 8 OR 16 BYTES 
+
+   SIZE = 8  : will count doubles only and needs only 8 bytes per SFEN.
+   SIZE = 18 : will count and delete the doubles and needs 16 bytes per SFEN.
+
+   This makes the util extremely memory hungry, limitations per Gb :
+
+       Gb    Count   Delete  |   Gb    Count   Delete
+        8     1B      500M   |  128     16B     8B
+       16     2B       1B    |  256     32B    16B
+       32     4B       2B    |  512     64B    32B
+       64     8B       4B    |
+
 </pre>
