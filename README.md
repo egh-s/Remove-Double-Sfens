@@ -47,8 +47,13 @@ As a rule of fist using qsort, double data will double sorting time.
 
 # Else
 <pre>
-#define MAX_DOUBLES 100000000               // 100M
+1. #define MAX_DOUBLES 100000000               // 100M
 
-For storing doubles space is reserved for 100 millon sfens, increase this 
-number when you have more of them.
+   For storing doubles space is reserved for 100 millon sfens, increase 
+   this number when you have more of them.
+
+2. While the checksum approach is less effective than hashing (which would 
+   seriously slowdown the disk reading the number of collisions is low, 
+   about 1%. Meaning that in the above example the number is 0,007% of
+   all positions.
 </pre>
